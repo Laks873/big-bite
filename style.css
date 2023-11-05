@@ -1,0 +1,245 @@
+body{
+	background-color: black;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	background-color: black;
+}
+
+.nav-link{
+	position: relative;
+}
+
+.nav-link::after{
+	transition: all 0.2s;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background-color: orange;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+}
+.nav-link:hover::after{
+	opacity: 1;
+}
+.welcome-img{
+	background-image: url("asset/food-web.png");
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+  	height: 90vh;
+}
+
+.big-bite-text{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.bb-head{
+	font-size: 5rem;
+}
+
+.order-box{
+	z-index: 1;
+	margin-top: -4rem;
+}
+
+.order-btn-box{
+	text-align: center;
+}
+
+.menu-box{
+	margin-top: 3rem;
+	height: 56vh;
+}
+
+.menu-head{
+	font-size: 3rem;
+}
+
+.card{
+	border: none;
+	border-radius: 10%;
+}
+
+.menu-inside-box{
+	text-align: center;
+	margin-top: 8rem;
+}
+
+.partner-img{
+	background-image: url("asset/partners.png");
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+  	height: 94vh;
+}
+
+.partner-box{
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.partner-head{
+	font-size: 4rem;
+}
+
+.about-sec{
+	height: 68vh;
+}
+
+.about-box{
+	margin-left: 6rem;
+	margin-top: 3rem;
+	border-radius: 15%;
+	width: 30vw;
+	height: 55vh;
+	background-image: url("asset/about-image.png");
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+}
+
+.about-head{
+	margin-top: 6rem;
+	margin-left: 11rem;
+}
+
+.about-text{
+	font-size: 3rem;
+}
+.about-para{
+	font-size: 1.3rem;
+}
+.bb-color{
+	color: #CD5C08;
+}
+
+.form-area{
+	padding-top: 5%;
+}
+
+.row.single-form{
+	
+}
+
+.left{
+	padding: 181px 98px;
+	
+}
+
+.right{
+	padding: 50px 100px;
+	position: relative;
+	background-color: #191717;
+}
+
+.right i{
+	position: absolute;
+	color: black;
+	font-size: 80px;
+	left: -30px;
+	top: 40%;
+}
+.contact-head{
+	font-size: 3rem;
+}
+
+.form-control{
+	border: 2px solid white;
+}
+
+.right button{
+	border: none;
+	width: 100px;
+	background-color: orange;
+	color: black;
+	padding: 9px 0;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+.right button:hover{
+	background-color: brown;
+	color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+	.card-container{
+		margin-left: 2%;
+	}
+}
+
+
+@media screen and (max-width: 800px){
+	.menu-inside-box{
+		margin-top: 2rem;
+	}
+	.about-sec{
+		margin-top: 60rem;
+	}
+	.about-box{
+	margin-top: -3rem;
+	margin-left: 1rem;
+	border-radius: 15%;
+	width: 180px;
+	height: 200px;
+	background-image: url("asset/about-image.png");
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+    text-align: center;
+	}
+	.about-head{
+	margin-top: 2rem;
+	margin-left: 1rem;
+	}
+	.about-text{
+		font-size: 2rem;
+	}
+	.about-para{
+		font-size: 1rem;
+	}
+
+}
+
+@media(max-width: 767px){
+	.left{
+		text-align: center;
+		padding: 90px 15px;
+	}
+	.right{
+		padding: 25px;
+	}
+	button{
+		width: 90px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.menu-inside-box{
+		margin-top: 0.8rem;
+		text-align: left;
+	}
+	.menu-head{
+		font-size: 1.8rem;
+	}
+	.card{
+		width: 11px;
+	}
+
+}
+
